@@ -1,5 +1,5 @@
 # js-app
-This is a list of all the javascript programs/apps From Florin pop App ideas. To check them out got to this link 
+This is a list of all the javascript programs/apps From Florin pop App ideas. To check them out go to this link 
 https://github.com/florinpop17/app-ideas <br><br>
 
 ## Program-1
