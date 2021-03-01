@@ -4,10 +4,14 @@ https://fleventy-5.github.io/js-app/.
 ## Program-1
 Date: 23/02/2021<br>
 Name: bin2dec<br>
-Converting from binary to decimal
+Converting from binary to decimal.
 
 ## Program-2
 Date: 24/02/2021<br>
 Name: Boder Radius Previewer<br>
-Program where user can change the 4 border radius of a box;
+Program where user can change the 4 border radius of a box.
  
+## Program-3
+Date: 24/02/2021<br>
+Name:Calculator<br>
+Calculator program where i make use of the eval() function. Will try making a expression evaluator later.
