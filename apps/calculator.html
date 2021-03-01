@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Claculator</title>
+	<style type="text/css">
+		body{
+			animation-name: body;
+			animation-duration: 5s;
+			animation-direction: alternate-reverse;
+			animation-iteration-count: infinite;
+		}
+		#container{
+			text-align: center;
+			margin: 20%;
+		}
+		#input{
+			width: 250px;
+			margin-bottom: 20px;
+		}
+
+		.btn{
+			margin: 1px;
+		}
+
+		#msg{
+			color:red;
+			font-size: 14px;
+		}
+	
+		@keyframes body{
+			from{
+				background-color: lightblue;
+			}
+			to{
+				background-color:hue;
+			}
+		} 
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p id= "msg"></p>
+		<input type="text" id = "input">
+		<br>
+		<button class = "btn" value="7">7</button>
+		<button class = "btn" value="8">8</button>
+		<button class = "btn" value="9">9</button>
+		<button class = "btn" value="/">/</button>
+		<button class = "btn" value="c">C</button>
+		<br>
+		<button class = "btn" value="4">4</button>
+		<button class = "btn" value="5">5</button>
+		<button class = "btn" value="6">6</button>
+		<button class = "btn" value="*">*</button>
+		<br>
+		<button class = "btn" value="1">1</button>
+		<button class = "btn" value="2">2</button>
+		<button class = "btn" value="3">3</button>
+		<button class = "btn" value="-">-</button>
+		<br>
+		<button class = "btn" value="0" >0</button>
+		<button class = "btn" value=".">.</button>
+		<button class = "btn" value="%">%</button>
+		<button class = "btn" value="+">+</button>
+		<button class = "btn" value="=">=</button><br>
+		
+	</div>
+	<script type="text/javascript">
+
+		let screen = document.getElementById('input');
+
+		
+		
+		document.getElementById("container").onclick = function(e){
+			if(e.target.matches('.btn')){
+				if(e.target.value && e.target.value !='c' && e.target.value !='='){
+					screen.value += e.target.value;
+				}else if (e.target.value == 'c'){
+					screen.value = '';
+				}else if (e.target.value == '=') {
+					try{
+						screen.value = eval(screen.value);
+					}catch(e){
+						document.getElementById('msg').innerHTML = e;
+
+					}
+				}
+			}
+		}
+
+		screen.addEventListener('input',function(){
+			if(screen.value[screen.value.length -1]=='='){
+				let str = screen.value.slice(0,-1);
+				screen.value = eval(str);	
+			}
+		})
+		
+
+	</script>
+</body>
+</html>
