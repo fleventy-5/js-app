@@ -12,6 +12,6 @@ Name: Boder Radius Previewer<br>
 Program where user can change the 4 border radius of a box.
  
 ## Program-3
-Date: 24/02/2021<br>
+Date: 3/03/2021<br>
 Name:Calculator<br>
-Calculator program where i make use of the eval() function. Will try making a expression evaluator later.
+Calculator program where i make use of the eval() function. Will try making an expression evaluator later.
