@@ -9,7 +9,7 @@ Converting from binary to decimal.
 
 ## Program-2
 Date: 24/02/2021<br>
-Name: Boder Radius Previewer<br>
+Name: Border Radius Previewer<br>
 Program where user can change the 4 border radius of a box.
  
 ## Program-3
